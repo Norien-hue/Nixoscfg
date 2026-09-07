@@ -98,13 +98,16 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
+      git 
+      vscodium
+      obsidian
     #  thunderbird
     ];
   };
 
   users.users.guest = {
     isNormalUser = true;
-    description = "guest user"
+    description = "guest user";
   };
 
   # Optimizing every build to use hard links on same version of software
@@ -112,6 +115,18 @@ in
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # Config git
+  # programs.git = {
+  #   enable = true;
+  #   settings = {
+  #     user = {
+  #       name = "Norien";
+  #       email = "profesionalsanchezmartin@gmail.com";
+  #     };
+  #     init.defaultBranch = "main";
+  #   };
+  # };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -122,10 +137,8 @@ in
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     brave
-    git
-    vscodium
-    obsidian
     fastfetch
+    steam
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
