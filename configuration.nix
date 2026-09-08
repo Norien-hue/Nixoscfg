@@ -101,6 +101,7 @@ in
       git 
       vscodium
       obsidian
+      discord
     #  thunderbird
     ];
   };
@@ -116,7 +117,10 @@ in
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Config git
+  # Install steam.
+  programs.steam.enable = true;
+
+  # Config git.
   # programs.git = {
   #   enable = true;
   #   settings = {
@@ -138,7 +142,7 @@ in
     wget
     brave
     fastfetch
-    steam
+    prelink
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
