@@ -1,5 +1,4 @@
 path="/etc/nixos"
-eval=${path}/configuration.nix
 
 confirmation() {
     echo "Are you sure you want to continue? [y/n]"
@@ -17,7 +16,8 @@ copy() {
 }
 
 rebuild() {
-    nixos-rebuild switch -f ${eval}
+    # nixos-rebuild switch -f ${path}/configuration.nix
+    nixos-rebuild switch
 }
 
 cprb() {
@@ -26,7 +26,7 @@ cprb() {
 }
 
 if [[ $# == 0 ]]; then
-    echo "Moving and rebuilding system from ${eval}"
+    echo "Moving and rebuilding system from ${path}"
     confirmation
     cprb
 elif [[ $1 == "-p" ]]; then
@@ -34,7 +34,7 @@ elif [[ $1 == "-p" ]]; then
         echo "Provide path after -p option."
     else
         path=$2;
-        echo "Moving and rebuilding system from ${eval}"
+        echo "Moving and rebuilding system from ${path}"
         confirmation
         cprb
     fi
