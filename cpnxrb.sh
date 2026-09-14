@@ -21,7 +21,7 @@ rebuild() {
 }
 
 cprb() {
-    move
+    copy
     rebuild
 }
 
