@@ -30,12 +30,13 @@ if [[ $# == 0 ]]; then
     confirmation
     cprb
 elif [[ $1 == "-p" ]]; then
-    if [[ $# -lt 2 ]]; then
-        echo "Provide path after -p option."
-    else
-        path=$2;
-        echo "Moving and rebuilding system from ${path}"
-        confirmation
-        cprb
-    fi
+    echo "This option is currently disabled to errors right now not understood"
+    # if [[ $# -lt 2 ]]; then
+    #     echo "Provide path after -p option."
+    # else
+    #     path=$2;
+    #     echo "Moving and rebuilding system from ${path}"
+    #     confirmation
+    #     cprb
+    # fi
 fi
