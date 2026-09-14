@@ -13,7 +13,7 @@ confirmation() {
 }
 
 copy() {
-    cp -f ./* ${path}
+    cp -fr ./* ${path}
 }
 
 rebuild() {
