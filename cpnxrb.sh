@@ -17,7 +17,7 @@ copy() {
 }
 
 rebuild() {
-    nixos-rebuild --switch -f eval
+    nixos-rebuild switch -f eval
 }
 
 cprb() {
