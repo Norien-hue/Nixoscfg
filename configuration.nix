@@ -99,9 +99,9 @@ in
     packages = with pkgs; [
       kdePackages.kate
       git 
-      vscodium
       obsidian
       discord
+      godot
     #  thunderbird
     ];
   };
@@ -119,6 +119,9 @@ in
 
   # Install steam.
   programs.steam.enable = true;
+
+  # Enable flatpak.
+  services.flatpak.enable = true;
 
   # Config git.
   # programs.git = {
@@ -143,6 +146,10 @@ in
     brave
     fastfetch
     prelink
+    patchelf
+    tldr
+    vscodium
+    nixd
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
