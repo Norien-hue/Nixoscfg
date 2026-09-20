@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/default.nix
     ];
 
   # Removing hibernation to avoid the use of SSD swap
@@ -89,12 +90,7 @@
     #  thunderbird
     ];
   };
-
-  users.users.guest = {
-    isNormalUser = true;
-    description = "guest user";
-  };
-
+  
   # Optimizing every build to use hard links on same version of software
   nix.settings.auto-optimise-store = true;
 

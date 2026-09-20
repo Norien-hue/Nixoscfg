@@ -1,8 +1,11 @@
+{ config, pkgs, ... }:
+
 let 
   local = "es_ES.UTF-8";
 in 
 {
   i18n.defaultLocale = local;
+  
   i18n.extraLocaleSettings = {
   LC_ADDRESS = local;
   LC_IDENTIFICATION = local;

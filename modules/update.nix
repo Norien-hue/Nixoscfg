@@ -1,7 +1,9 @@
-{
-  # Enable automatic upgrades.
-  system.autoUpgrade.enable = true;
+{ config, pkgs, ... }:
 
-  # Disabled automatic reboot to upgrade the system.
+{
+  # Disable automatic upgrades.
+  system.autoUpgrade.enable = false;
+
+  # Disabled automatic reboot needed because of change in kernel/initrd modules.
   system.autoUpgrade.allowReboot = false;
 }
