@@ -17,7 +17,7 @@ copy() {
 
 rebuild() {
     # nixos-rebuild switch -f ${path}/configuration.nix
-    nixos-rebuild switch
+    nixos-rebuild switch --upgrade
 }
 
 cprb() {
@@ -30,7 +30,7 @@ if [[ $# == 0 ]]; then
     confirmation
     cprb
 elif [[ $1 == "-p" ]]; then
-    echo "This option is currently disabled to errors right now not understood"
+    echo "This option is currently disabled because of errors right now not understood"
     # if [[ $# -lt 2 ]]; then
     #     echo "Provide path after -p option."
     # else
