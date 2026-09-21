@@ -38,6 +38,9 @@
 
   # Select internationalisation properties.
 
+  # Enable sddm via wayland
+  services.displayManager.sddm.wayland.enable = true;
+
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
