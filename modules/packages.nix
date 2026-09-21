@@ -16,5 +16,6 @@
     lutris
     p7zip
     rarcrack
+    unrar-free
   ];
 }
