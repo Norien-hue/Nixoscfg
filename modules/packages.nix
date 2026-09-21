@@ -16,6 +16,5 @@
     lutris
     p7zip-rar
     rarcrack
-    nexusmods-app
   ];
 }
