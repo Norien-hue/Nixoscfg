@@ -15,5 +15,6 @@
     nixd
     lutris
     p7zip
+    rarcrack
   ];
 }
