@@ -14,8 +14,8 @@
     vscodium
     nixd
     lutris
-    p7zip
+    p7zip-rar
     rarcrack
-    unrar-free
+    nexusmods-app
   ];
 }
