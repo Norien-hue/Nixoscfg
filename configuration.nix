@@ -97,6 +97,9 @@
   # Optimizing every build to use hard links on same version of software
   nix.settings.auto-optimise-store = true;
 
+  # Enable hardware accelerated graphics
+  hardware.graphics.enable = true;
+
   # Install firefox.
   programs.firefox.enable = true;
 
