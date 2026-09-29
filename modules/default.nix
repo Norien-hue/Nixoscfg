@@ -3,6 +3,6 @@
     ./locale.nix
     ./update.nix
     ./packages.nix
-    ./services
+    ./services.nix
   ];
 }
