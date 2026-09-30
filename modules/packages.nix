@@ -18,6 +18,7 @@
     rarcrack
     jdk21
     gcc
+    xclip
     
     (
       vscode-with-extension.override {
