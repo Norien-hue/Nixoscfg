@@ -17,5 +17,13 @@
     p7zip-rar
     rarcrack
     jdk21
+    gcc
+    
+    (
+      vscode-with-extension.override {
+        vscode = vscodium;
+        
+      }
+    )
   ];
 }
