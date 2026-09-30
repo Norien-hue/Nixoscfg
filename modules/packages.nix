@@ -19,12 +19,13 @@
     jdk21
     gcc
     xclip
+
     
-    (
-      vscode-with-extension.override {
-        vscode = vscodium;
-        
-      }
-    )
+    #(
+    #  vscode-with-extension.override {
+    #    vscode = vscodium;
+    #    
+    #  }
+    #)
   ];
 }
