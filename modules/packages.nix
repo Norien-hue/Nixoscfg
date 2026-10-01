@@ -19,7 +19,13 @@
     jdk21
     gcc
     xclip
-
+    direnv
+    clang-tools
+    man-db
+    
+    # Had a stroke trying get c libraries manpages working.
+    # This is what made them work.
+    man-pages-posix
     
     #(
     #  vscode-with-extension.override {

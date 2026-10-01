@@ -100,6 +100,9 @@
   # Enable hardware accelerated graphics
   hardware.graphics.enable = true;
 
+  # Enabled documentation targeted towards devs.
+  documentation.dev.enable = true;
+
   # Install firefox.
   programs.firefox.enable = true;
 
